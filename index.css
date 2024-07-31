@@ -1,0 +1,1584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+    
+    
+
+}
+
+.container{
+    height: 100%;
+    background-image: url(bg.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    
+position: relative;}
+
+
+.container .img1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 30%;
+    width: 300px;
+    
+}
+
+.container .img2{
+    /* display: flex; */
+    position: absolute;
+    bottom: 0;
+   
+    left: 50%;
+    width: 200px;
+    height: 15%;
+    transform: translateX(-50%); 
+    
+}
+
+.container .img3{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    
+    left: 0;
+    width: 100px;
+    height: 80px;
+    
+
+}
+
+.container .img4{
+    
+    height: 25rem;
+    background-size: cover;
+    width: 17rem;
+    position: absolute;
+    top: 260px;
+    
+}
+
+.container .img5{
+
+    
+    height: 140px;
+    width: 8rem;
+}
+
+.container .img6{
+
+    
+    height: 120px;
+    position: absolute;
+    left: 50vw;
+    max-height: 20vh;
+    max-width: 100px;
+    top: 100px;
+}
+
+.container .img9{
+  position: absolute;
+  right: 0;
+  height: 400px;
+}
+
+.container .navbar{
+
+    
+    margin: 20px auto;
+
+}
+
+.navbar img{
+  max-width: 15vw;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    
+    max-width: 100rem;
+    align-items: center;
+}
+
+.navbar li{
+    display: flex;
+    gap: 2rem;
+    font-size: 2vw;
+    color: white;
+}
+.navbar h4{
+    color: white;
+    
+    max-width:300px;
+}
+
+.heading
+{
+    color: aliceblue;
+   
+    justify-content: center;
+    width: 45%;
+    height: 500px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%); 
+    /* display: flex; */
+
+    
+}
+
+
+/* .heading
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border: 3px solid greenyellow;
+    gap: 10px;
+} */
+
+.heading .main-heading{
+    font-size: 2.5rem;
+    
+    position: relative;
+    width: 50vw;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50%;
+    margin-top: 10px;
+    margin-bottom: 50px; 
+}
+
+.main-heading .know{
+    
+ 
+    max-width: 100%;
+    max-height: 100%;
+   margin-bottom: 2%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.know h1{
+  font-size: 2rem;
+}
+
+
+
+.sub-head{
+  
+margin-top: 2%;
+}
+
+@media (max-width:1084px){
+
+  .main-heading .know{
+    font-size: 4.5rem;
+}
+}
+@media (max-width:1048px){
+
+  .main-heading .know{
+    
+    width: 200%;
+    font-size: 4rem;
+    
+}
+}
+@media (max-width:993px){
+
+  .main-heading .know{
+    font-size: 150%;
+    width: 180%;
+    
+}
+}
+
+@media (max-width:720px){
+
+  .main-heading .know{
+    font-size: 3.5rem;
+    width: 650px;
+    
+}
+}
+@media (max-width:653px){
+
+  .main-heading .know{
+    font-size: 130%;
+    width: 180%;
+    
+}
+}
+@media (max-width:624px){
+
+  .main-heading .know{
+    font-size: 3rem;
+    width: 700px;
+    
+}
+}
+
+@media (max-width:566px){
+
+  .main-heading .know{
+    font-size: 120%;
+    width: 180%;
+    
+}
+}
+@media (max-width:398px){
+
+  .main-heading .know{
+    font-size: 120%;
+    width: 200%;
+    
+}
+}
+
+p{
+    font-size: 100px;
+}
+
+/*******************************************button*************************/
+.button-new{
+    
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.text {
+    translate: 2% -6%;
+    letter-spacing: 0.01ch;
+    color: hsl(0 0% calc(60% + (var(--active) * 26%)));
+    z-index: 999;
+    padding: 0 34px;
+  }
+  .text::before {
+    content: "";
+    position: absolute;
+    top: -290%;
+    left: 90%;
+    rotate: -45deg;
+    width: 5em;
+    height: 1px;
+    background: linear-gradient(90deg, #ffffff, transparent);
+    animation: 4s shootingStar ease-in-out infinite;
+    transition: 1s ease;
+    z-index: -1;
+    animation-delay: 1s;
+    display: none;
+  }
+  .text::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: -290%;
+    left: 10%;
+    rotate: -45deg;
+    width: 5em;
+    height: 1px;
+    background: linear-gradient(90deg, #ffffff, transparent);
+    animation: 7s shootingStar ease-in-out infinite;
+    animation-delay: 3s;
+  }
+  .space-button:hover .text::before,
+  .space-button:hover .text::after {
+    display: block;
+  }
+  .galaxy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: 140px 20px #fff, 425px 20px #fff, 70px 120px #fff, 20px 130px #fff,
+      110px 80px #fff, 280px 80px #fff, 250px 350px #fff, 280px 230px #fff,
+      220px 190px #fff, 450px 100px #fff, 380px 80px #fff, 520px 50px #fff;
+    z-index: -1;
+    transition: all 1.5s ease-in-out;
+    animation: 1s glowing-stars linear alternate infinite;
+    animation-delay: 0.4s;
+  }
+  .galaxy::after {
+    content: "";
+    position: absolute;
+    top: -150px;
+    left: -65px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 1;
+    box-shadow: 490px 330px #fff, 420px 300px #fff, 320px 280px #fff,
+      380px 350px #fff, 546px 170px #fff, 420px 180px #fff, 370px 150px #fff,
+      200px 250px #fff, 80px 20px #fff, 190px 50px #fff, 270px 20px #fff,
+      120px 230px #fff, 350px -1px #fff, 150px 369px #fff;
+    z-index: -1;
+    transition: all 2s ease-in-out;
+    animation: 1s glowing-stars linear alternate infinite;
+    animation-delay: 0.8s;
+  }
+  .space-button {
+    --cut: 0.1em;
+    --active: 0;
+    --bg: radial-gradient(
+          120% 120% at 126% 126%,
+          hsl(0 calc(var(--active) * 97%) 98% / calc(var(--active) * 0.9)) 40%,
+          /* Changed hue to 0 for red */ transparent 50%
+        )
+        calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,
+      radial-gradient(
+          120% 120% at 120% 120%,
+          hsl(0 calc(var(--active) * 97%) 70% / calc(var(--active) * 1)) 30%,
+          /* Changed hue to 0 for red */ transparent 70%
+        )
+        calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,
+      hsl(0 calc(var(--active) * 100%) calc(12% - (var(--active) * 8%))); /* Changed hue to 0 for red */
+    background: var(--bg);
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+    padding: 0.9em 1.3em;
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+    white-space: nowrap;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 0 calc(var(--active) * 6em) calc(var(--active) * 3em)
+        hsla(12, 97%, 61%, 0.3),
+      0 0.05em 0 0
+        hsl(0, calc(var(--active) * 97%), calc((var(--active) * 50%) + 30%)) inset,
+      0 -0.05em 0 0 hsl(0, calc(var(--active) * 97%), calc(var(--active) * 10%)) inset;
+  
+    transition: box-shadow 0.25s ease-out, scale 0.25s, background 0.25s;
+    scale: calc(1 + (var(--active) * 0.1));
+    transform-style: preserve-3d;
+    perspective: 100vmin;
+    overflow: hidden;
+  }
+  .space-button:active {
+    scale: 1;
+    --bg: radial-gradient(
+          120% 120% at 126% 126%,
+          hsl(245 calc(var(--active) * 97%) 98% / calc(var(--active) * 0.9)) 40%,
+          transparent 50%
+        )
+        calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,
+      radial-gradient(
+          120% 120% at 120% 120%,
+          hsl(245 calc(var(--active) * 97%) 70% / calc(var(--active) * 1)) 30%,
+          transparent 70%
+        )
+        calc(100px - (var(--active) * 100px)) 0 / 100% 100% no-repeat,
+      hsl(245 calc(var(--active) * 100%) calc(12% - (var(--active) * 8%)));
+    box-shadow: 0 0 calc(var(--active) * 6em) calc(var(--active) * 3em)
+        hsl(245 97% 61% / 0.5),
+      0 0.05em 0 0
+        hsl(245 calc(var(--active) * 97%) calc((var(--active) * 50%) + 30%)) inset,
+      0 -0.05em 0 0 hsl(245 calc(var(--active) * 97%) calc(var(--active) * 10%)) inset;
+    background: var(--bg);
+  }
+  .galaxy:active::before {
+    animation: circling 2s linear infinite; /* Animation for circling effect */
+  }
+  .galaxy:active::after {
+    animation: circling 1.5s linear infinite; /* Animation for circling effect */
+  }
+  
+  @keyframes circling {
+    0% {
+      transform: translate(-10px, -20%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-10px, -20%) rotate(200deg);
+    }
+  }
+  .galaxy {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    overflow: hidden;
+    opacity: var(--active);
+    transition: opacity 0.25s;
+  }
+  
+  @-webkit-keyframes move-x {
+    0% {
+      translate: -100px 0;
+    }
+    100% {
+      translate: 100px 0;
+    }
+  }
+  @keyframes move-x {
+    0% {
+      translate: -100px 0;
+    }
+    100% {
+      translate: 100px 0;
+    }
+  }
+  @-webkit-keyframes move-y {
+    0% {
+      transform: translate(0, -50px);
+    }
+    100% {
+      transform: translate(0, 50px);
+    }
+  }
+  @keyframes move-y {
+    0% {
+      transform: translate(0, -50px);
+    }
+    100% {
+      transform: translate(0, 50px);
+    }
+  }
+  
+  .backdrop {
+    position: absolute;
+    inset: var(--cut);
+    background: var(--bg);
+    border-radius: 2rem;
+    transition: background 0.25s;
+  }
+  
+  @supports (selector(:has(:is(+ *)))) {
+    body:has(button:is(:hover, :focus-visible)) {
+      --active: 1;
+      --play-state: running;
+    }
+    .bodydrop {
+      display: none;
+    }
+  }
+  
+  .space-button:is(:hover, :focus-visible) ~ :is(.bodydrop, .particle-pen) {
+    --active: 1;
+    --play-state: running;
+  }
+  
+  .space-button:is(:hover, :focus-visible) {
+    --active: 1;
+    --play-state: running;
+  }
+  
+  .galaxy-button {
+    position: relative;
+  }
+  
+  /* ANIMATIONS */
+  @keyframes shootingStar {
+    0% {
+      transform: translateX(0) translateY(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(-55em) translateY(0);
+      opacity: 1;
+    }
+    70% {
+      transform: translateX(-70em) translateY(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0) translateY(0);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes glowing-stars {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+  /***********************************************/
+  /*************sun*******************************/
+  /************************************************/
+
+.sun,.mercury,.venus,.earth,.mars,.email{
+
+    background-image: url(bg.png);
+    height: 100%;
+    width: 100vw;
+    background-size: cover;
+   
+    
+}
+.sun-img{
+    filter: drop-shadow(1px 300px 400px yellow);
+    
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    
+    max-width: 100vw;
+    object-fit: cover;
+   
+    
+}
+
+.sun-text{
+    height: 50%;
+    width: 80vw;
+    
+    margin-left: 40px;
+}
+.sun-text .sun-head{
+
+    color: whitesmoke;
+    font-size: 5rem ;
+    margin-bottom: 10px;
+}
+
+.sun-text .sun-about{
+
+    color: #fff;
+    
+    margin-top: 2px;
+}
+.two-cards{
+    
+    display: flex;
+    position: relative;
+    gap: 5%;
+    
+    margin-top: 40px;
+}
+
+.dm,.temp{
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 40%;
+    margin: 15px 0px;
+}
+
+
+
+
+
+.card {
+    
+    
+    height: 254px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 100px;
+    width: 100%;
+  }
+  
+  .card h2 {
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    width: 110%;
+    background-image: linear-gradient(180deg,white, yellow);
+    height: 150%;
+    animation: rotBGimg 2.5s linear infinite;
+    transition: all 0.1s linear;
+  }
+  
+  @keyframes rotBGimg {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    background: #07182E;
+    ;
+    inset: 5px;
+    border-radius: 15px;
+  }  
+  /* .card:hover:before {
+    background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+    animation: rotBGimg 3.5s linear infinite;
+  } */
+  
+  .card-subparts{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    
+    width: 100%;
+  }
+
+  .img-donut{
+    position: relative;
+    left: 1%;
+    width: 2px;
+    
+    
+  }
+
+  .diameter{
+    position: absolute;
+    left: 40%;
+    color: white;
+    
+  }
+
+  
+  .diameter .dim{
+    font-size:  0.8rem;
+  }
+
+  .diameter .dist{
+    font-size: 2.5rem;
+  }
+
+  .diameter .miles{
+    font-size: 1.4rem;
+  }
+
+  @media (max-width:720px)
+  {
+    .diameter .dist{
+      font-size: 1.4rem;
+     
+    }
+
+    .diameter{
+      margin-top: 5px;
+      margin-left: 5%;
+    }
+   
+  }
+
+  @media (max-width:611px)
+  {
+    .diameter .dist{
+      font-size: 1rem;
+      
+    }
+
+    .diameter{
+      margin-top: 5px;
+      margin-left: 10%;
+    }
+   
+  }
+
+
+  /**********************mercury*****************/
+
+  .mercury{
+    display: flex;
+    position: relative;
+    gap: 2vw;
+    
+
+  }
+
+  .mercury-img{
+    position: relative;
+    top: 30px;
+    width: 40vw;
+    height: 600px;
+    
+    
+   
+  }
+
+  .dm{
+   
+    width: 100%;
+  }
+  
+
+  .mercury-heading,.venus-heading{
+    color: white;
+    margin-top: 100px;
+    width: 60vw;
+    
+    
+  }
+
+  .mercury-heading{
+    
+    width: 50vw;
+  }
+
+  .mercury-heading h1{
+    font-size: 4rem;
+    margin-bottom: 15px;
+    
+    margin-right: 10vw;
+    max-width: 100vw;
+  }
+
+  .venus-heading h1{
+    font-size: 4rem;
+    margin-bottom: 15px;
+    
+    
+  }
+
+  .mercury-data,.earth-head{
+    color: white;
+  }
+
+  .mercury-data{
+    font-size: 1rem;
+    
+    max-width: 100vw;
+    
+  }
+
+  .three-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+  }
+
+  .venus{
+    display: flex;
+  }
+
+  .venus-img{
+    height: 600px;
+    width: 100%;
+    position: relative;
+    top: 140px;
+    
+  }
+
+  .venus-heading{
+    top: 200px;
+    margin-left: 2rem;
+  }
+
+.venus-card{
+  display: flex;
+  display: inline;
+  
+  margin-top: 20px;
+}
+
+
+
+.venus-dm{
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+
+
+  @media (max-width:1320px)
+  {
+    .three-cards-two{
+      display: flex;
+      display: inline;  
+    }
+  }
+  
+  .mercury .diameter{
+    
+    width: 50%;
+    height: 100%;
+    
+  }
+
+  .mercury .dim{
+    font-size: 0.6rem;
+    
+  }
+
+  .mercury .dist{
+    font-size: 2.3rem;
+    
+  }
+
+  .mercury .miles{
+    font-size: 1.2rem;
+  }
+
+  @media (max-width:1620px)
+  {
+    .dist{
+      font-size: 1px;
+      
+    }
+  }
+
+  @media (max-width:1321px)
+  {
+    .mercury .dim{
+      font-size: 0.5rem;
+      
+    }
+  
+    .mercury .dist{
+      font-size: 2.0rem;
+      
+    }
+  
+    .mercury .miles{
+      font-size: 1.0rem;
+    }
+  }
+
+  @media (max-width:930px)
+  {
+    .mercury .dim{
+      font-size: 0.5rem;
+      
+    }
+  
+    .mercury .dist{
+      font-size: 1.8rem;
+      
+    }
+  
+    .mercury .miles{
+      font-size: 0.9rem;
+    }
+
+    .diameter{
+      margin-left: 10px;
+    }
+
+   
+  }
+
+  @media (max-width:1190px)
+  {
+    .venus .dim{
+      font-size: 0.8rem;
+      
+    }
+  
+    .venus .dist{
+      font-size: 2rem;
+      
+    }
+  
+    .venus .miles{
+      font-size: 1.0rem;
+    }
+  }
+
+  @media (max-width:650px)
+  {
+    .venus .dim{
+      font-size: 0.5rem;
+      
+    }
+  
+    .venus .dist{
+      font-size: 1.7rem;
+      
+    }
+  
+    .venus .miles{
+      font-size: 0.9rem;
+    }
+  }
+
+
+  
+
+  /*******************earth start*****************/
+
+  .earth-head{
+    display: flex;
+    /* display: inline; */
+    
+    padding-top: 2rem;
+    height: 15rem;
+    /* justify-content: space-between; */
+    
+  }
+
+  .earth-heading{
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .earth-data{
+    width: 50%;
+    
+  }
+
+  .earth-text{
+    position: relative;
+    left: 10vw;
+  }
+
+  .dm-earth{
+    height: 101px;
+   border: 3px dashed plum;
+    width: 25rem;
+    position: relative;
+    right: 10rem;
+  }
+
+  @media (max-width:875px)
+  {
+    .dm-earth{
+      right: 4rem;
+      width: 20rem;
+    }
+  }
+
+  @media (max-width:965px)
+  {
+    .dm-earth{
+      right: 4rem;
+      width: 20rem;
+    }
+  }
+
+  @media (max-width:800px)
+  {
+    .dm-earth{
+      right: 4rem;
+      width: 15rem;
+    }
+  }
+
+  @media (max-width:710px)
+  {
+    .dm-earth{
+      right: 4rem;
+      width: 10rem;
+    }
+  }
+
+  @media (max-width:520px)
+  {
+    .dm-earth{
+      right: 1rem;
+      width: 10rem;
+    }
+  }
+
+  @media (max-width:455px)
+  {
+    .dm-earth{
+      right: 0.5rem;
+      width: 10rem;
+    }
+  }
+
+  .moon-planet{
+    
+    position: relative;
+    left: 30vw;
+    display: flex;
+    
+   max-width: 50vw;
+  }
+
+  .moon-head{
+    color: white;
+    width: 50vw;
+    
+   
+    /* right: -30rem; */
+    position: relative;
+    /* right: 0rem; */
+    
+   
+   
+  }
+
+  .moon-heading{
+    font-size: 1.5rem;
+    
+ 
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .moon-data{
+   
+    width: 100%;
+  }
+
+  .earth-img
+  {
+    position: relative;
+    
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .shadow,.real{
+    position: absolute;
+    height: auto;
+   
+    
+   
+    
+  }
+
+  .real{
+    height: 32rem;
+    bottom: 0px;
+  }
+
+  .earth-arrow{
+    height: 50px;
+    width: 10rem;
+    margin-left: 1rem;
+    
+  }
+
+  @media (max-width:1110px)
+  {
+    .moon-planet{
+      left: 35vw;
+    }
+  }
+
+  @media (max-width:875px)
+  {
+    .moon-planet{
+      left: 40vw;
+      
+    }
+
+    .moon-planet .moon-data{
+      font-size: 0.8rem;
+     
+    }
+  }
+
+  @media (max-width:770px)
+  {
+    .moon-planet{
+      left: 50vw;
+      
+    }
+
+    .moon-planet .moon-data{
+      font-size: 0.5rem;
+      
+    }
+  }
+
+  /**************** mars */
+
+  .mars{
+    position: relative;
+  }
+
+  
+  .mars-heading{
+    color: white;
+   
+    width: 60vw;
+    height: 100px;
+    margin-top: -1rem;
+    margin-left: 4rem;
+  }
+  
+  .mars-head{
+    
+    font-size: 3rem;
+  }
+
+  .mars-card{
+   
+    display: flex;
+    display: inline;
+   
+    flex-wrap: wrap;
+    width: 50vw;
+    
+    align-items: center;
+    justify-content: center;
+    margin-right: 0%;
+   
+  }
+
+  @media (max-width:1400px)
+  {
+    .mars-card{
+width: 30vw;
+    }
+  }
+
+  .mars-card .dm,.temp{
+    width: 100%;
+  }
+
+  .head-and-card{
+    display: flex;
+  
+   width: 90vw;
+   gap: 10%;
+    padding-top: 50px;
+    margin-left: 8vw;
+    
+    
+  }
+
+  .marsimg{
+    position: absolute;
+    bottom: 0;
+   
+   
+  }
+
+
+
+  
+  .mars-img{
+
+    width: 30rem;
+  }
+
+  .arrow-two{
+    position: absolute;
+    
+    transform: rotate(50deg) scaleX(-1);
+    top: 340px;
+    left: 400px;
+  }
+  .martian-moon{
+    color: white;
+    width: 20vw;
+    font-size: 90%;
+    
+    position: absolute;
+    top: 400px;
+    left: 500px;
+  }
+
+  @media (max-width:1030px)
+  {
+    .martian-moon{
+      width: 15vw;
+    font-size: 80%;
+    }
+  }
+
+  @media (max-width:1035px)
+  {
+    .mars .dim{
+                font-size: 0.7rem;
+               
+    }
+    .mars .dist{
+          font-size: 1.5rem;
+    }
+
+    .mars .miles{
+            font-size: 1rem;
+    }
+
+    .mars .diameter{
+      
+      margin-top: 0.5rem;
+    }
+  }
+
+  @media (max-width:930px)
+  {
+    .mars-card{
+      
+      width: 25vw;
+    }
+  }
+
+
+  /**************** email starts */
+
+  .email{
+    position: relative;
+  }
+  .planet-image{
+    position: absolute;
+    bottom: 0;
+    
+    width: 50rem;
+    
+  }
+
+  .planet-img{
+    width: 100%;;
+  }
+  
+  .email-container{
+    position: absolute;
+    border-radius:30px ;
+    background-color: #1E1E1E;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 300px;
+  }
+
+  .title{
+    font-size: 2rem;
+   
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  @media (max-width:810px)
+{
+  .title{
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width:455px)
+{
+  .title{
+    font-size: 1.2rem;
+  }
+}
+  .email-content{
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    height: 80%;
+    width: 80%;
+  }
+  .title-text{
+    position: absolute;
+    font-size: 1rem;
+    width: 100%;
+    
+  }
+
+  @media (max-width:455px)
+{
+  .title-text{
+    font-size: 0.8rem;
+  }
+}
+
+  .email-box{
+    width: 50%;
+    position: absolute;
+    margin-top: 30px;
+    border: 1px solid white;
+    height: 50px;
+    top: 60%;
+    left: 50%;
+    
+    background-color: white;
+    border-radius: 70px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+
+  @media (max-width:1070px)
+{
+  .email-box{
+    width:17rem ;
+    
+  }
+
+   .email-submit-button{
+    
+    width: 9.5rem;
+    
+  }
+}
+
+  .box-text{
+    color: black;
+    opacity: 50%;
+    margin-left: 4%;
+  }
+
+  button {
+    position: relative;
+    padding: 12px 35px;
+    background: rgb(181, 223, 248);
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 3px solid #fec195;
+    border-radius: 50px;
+    margin-right: 0.1rem;
+    height: 45px;
+    box-shadow: 0 0 0 #fec1958c;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .star-1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96);
+  }
+  
+  .star-2 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-3 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #fffdef);
+    z-index: -5;
+    transition: all 1s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-4 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #1100ff);
+    z-index: -5;
+    transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #77ff00);
+    z-index: -5;
+    transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01);
+  }
+  
+  .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 0 #1e01ff);
+    z-index: -5;
+    transition: all 0.8s ease;
+  }
+  
+  button:hover {
+    background-color: black;
+    color: #9ad9ed;
+    box-shadow: 0 0 25px #fec1958c;
+  }
+  
+  button:hover .star-1 {
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    width: 25px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-2 {
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #5b00f9);
+    z-index: 2;
+  }
+  
+  button:hover .star-3 {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-4 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    width: 8px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-5 {
+    position: absolute;
+    top: 25%;
+    left: 115%;
+    width: 15px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  button:hover .star-6 {
+    position: absolute;
+    top: 5%;
+    left: 60%;
+    width: 5px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #fffdef);
+    z-index: 2;
+  }
+  
+  .fil0 {
+    fill: #fffdef;
+  }
+
+ 
+ 
+  .email-box-two{
+
+    border: white;
+    margin-left: 4%;
+    height: 30px;
+    width: 50%;
+  }
+
+  input:focus {
+    outline: none; /* Removes the default outline */
+    border: none;  /* Removes the border */
+  }
+
+  .email-wrapper{
+    position: relative;
+    display: inline;
+   
+    width: 100%;
+  }
+
+  .navbar-bottom{
+    position: absolute;
+    bottom: 40px;
+    left: 5%;
+    display: flex;
+   justify-content: space-between;
+    
+    gap: 5px;
+    width: 90%;
+  }
+.navbar-bottom img{
+  width: 10vw;
+  
+
+}
+.navbar-bottom li{
+  width: 200px;
+  
+  font-size: 1vw;
+}
+
+.navbar-bottom h4{
+  width: 110px;
+  font-size: 1vw;
+  margin-right: 2%;
+  
+  
+}
+
+
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  @media (max-width:1320px)
+  {
+    .card-subparts{
+      
+      
+      width: 100vw;
+      
+      
+    }
+  }
+
+ 
+
+  .sun .dm{
+    width: 50%;
+  }
+
+  .sun .temp{
+    width: 50%;
+  }
