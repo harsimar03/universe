@@ -151,7 +151,7 @@ position: relative;}
 } */
 
 .heading .main-heading{
-    font-size: 2.5rem;
+    font-size: 2rem;
     
     position: relative;
     width: 50vw;
@@ -174,7 +174,7 @@ position: relative;}
     transform: translateX(-50%);
 }
 .know h1{
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 
@@ -249,6 +249,15 @@ margin-top: 2%;
     
 }
 }
+
+/* @media (max-width:330px)
+{
+  .main-heading{
+    border: 1px solid red;
+    font-size: 0.1rem;
+
+  }
+} */
 
 p{
     font-size: 100px;
@@ -942,13 +951,30 @@ p{
   }
 
   .earth-heading{
+    
     font-size: 5rem;
     margin-bottom: 0.5rem;
   }
 
+
+
   .earth-data{
     width: 50%;
     
+    
+  }
+
+  @media (max-width:330px)
+  {
+    .earth-heading{
+      font-size: 2.5rem;
+    }
+
+    .earth-data{
+      font-size: 0.8rem;
+      width: 150px;
+      margin-right: 2.3rem;
+    }
   }
 
   .earth-text{
@@ -958,7 +984,7 @@ p{
 
   .dm-earth{
     height: 101px;
-   border: 3px dashed plum;
+   
     width: 25rem;
     position: relative;
     right: 10rem;
@@ -1009,6 +1035,9 @@ p{
     .dm-earth{
       right: 0.5rem;
       width: 10rem;
+    }
+    .earth-heading{
+      font-size: 3rem;
     }
   }
 
@@ -1122,11 +1151,11 @@ p{
   
   .mars-heading{
     color: white;
-   
+  
     width: 60vw;
     height: 100px;
     margin-top: -1rem;
-    margin-left: 4rem;
+    margin-left: 1rem;
   }
   
   .mars-head{
